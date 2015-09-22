@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="sofahelp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofa Help</title>
+    <link href="/resources/css/3rd/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/resources/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header ng-include="'header.html'" class="page-header"></header>
+	<div class="content-container" ui-view></div>
+
+
+	<script src="/resources/js/3rd/angularjs/angular.min.js"></script>
+	<script src="/resources/js/3rd/ui-router/angular-ui-router.min.js"></script>
+	<script src="/resources/js/3rd/bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script>
+	<script src="/resources/js/3rd/bootstrap/angular-bootstrap-checkbox.js"></script>
+
+	<script src="/resources/js/app.js"></script>
+	<script src="/resources/js/route.js"></script>
+	<script src="/resources/js/controllers.js"></script>
+	<script src="/resources/js/services.js"></script>
+</body>
+</html>

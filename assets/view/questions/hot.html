@@ -1,0 +1,55 @@
+
+<div ng-controller="TopHotCtrl" class="container">
+hot
+	<div class="row">
+		<div class="col-md-9" role="main">
+			<p class="main-title">
+				今天，你在开发时遇到了什么问题呢？
+				<a href="#/ask" class="btn btn-primary">我要提问</a>
+			</p>
+			
+			<div>
+				<ul class="nav nav-tabs">
+				  <li role="presentation" ng-class="{active: $state.includes('questions.tophot')}"><a ui-sref="questions.tophot">最热的</a></li>
+				  <li role="presentation" ng-class="{active: $state.includes('questions.hot')}"><a ui-sref="questions.hot">热门的</a></li>
+				  <li role="presentation" ng-class="{active: $state.includes('questions.notanswered')}"><a ui-sref="questions.notanswered">未回答</a></li>
+				</ul>
+			</div>
+			
+			<div>
+				<section ng-repeat="question in questions" class="row question-summary">
+					<div class="col-md-3 vote-area">
+						<div class="question-status votes">
+							<div class="counts">{{question.votes}}</div>
+							<div>投票</div>
+						</div>
+						<div class="question-status answers" ng-class="{answered: question.answers, 'no-answer': !question.answers, resolved: question.isResovled}">
+							<div class="counts">{{question.answers}}</div>
+							<div>回答</div>
+						</div>
+						<div class="question-status views">
+							<div class="counts">{{question.views}}</div>
+							<div>浏览</div>
+						</div>
+					</div>
+						
+					<div class="col-md-9">
+						<div class="question-progress">
+							<a href="#/user/{{question.progress.lastOperator.id}}">{{question.progress.lastOperator.name}}</a>
+							<a href="#/question/{{question.id}}">{{question.progress.lastTime}}</a>
+						</div>
+						<div>
+							<h4 class="question-title"><a href="#/question/{{question.id}}">{{question.title}}</a></h2>
+							<ul class="tag-list">
+                				<li ng-repeat="tag in question.tags"><a href="#/tag/{{tag}}">{{tag}}</a></li>
+                			</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		
+		
+		<div class="col-md-3" role="complementary" ng-include="'sidebar/questions.html'"></div>
+	</div>     
+</div>

@@ -1,0 +1,135 @@
+nav .container {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.navbar-default {
+	background: #222E2A;
+}
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+	color: #A4BFB4;
+	font-size: 16px;
+	font-weight: bold;
+}
+.navbar-default .navbar-brand a:hover, .navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+}
+
+.navbar-default .navbar-brand {
+  font-size: 30px;
+}
+
+.btn-primary {
+  border-color: #008b57;
+  background-color: #009a61;
+  background-image: -webkit-linear-gradient(top, #009a61 0%, #00905b 100%);
+  background-image: -o-linear-gradient(top, #009a61 0%, #00905b 100%);
+  background-image: linear-gradient(to bottom, #009a61 0%, #00905b 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF009A61', endColorstr='#FF00905B', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+a {
+  color: #008E59;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #004229;
+  text-decoration: underline;
+}
+
+.main-title {
+  margin: 0 0 25px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.content-container {
+	padding-top: 20px;
+}
+
+.question-summary {
+	padding: 10px 0 0;
+	border-bottom: 1px solid #eee;
+}
+.vote-area {
+	padding-top: 20px;
+}
+.question-status {
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+
+	font-size: 11px;
+	color: #777;
+	padding: 5px 5px 6px 5px;
+	text-align: center;
+}
+.question-status .counts {
+	font-size: 14px;
+}
+
+.answers.no-answer {
+	background-color: #AD3A37;
+	color: #fff;
+}
+.answers.answered {
+	background-color: #009a61;
+	color: #fff;
+}
+.answers.resolved {
+	background-color: #808B87;
+	color: #fff;
+}
+
+
+.question-progress a {
+	color: #999;
+	padding: 0 5px 0 0;
+	font-size: 13px;
+}
+
+.question-title {
+	font-size:16px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin: 5px 0 7px;
+}
+
+.question-title a {
+	color: #333;
+}
+
+.tag-list {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+}
+.tag-list.multi-line li{
+	margin: 4px;
+}
+
+.tag-list li {
+	display: inline-block;
+	margin-right: 4px;
+	padding: 0;
+	font-size: 13px;
+}
+
+.tag-list li a {
+	display: inline-block;
+	padding: 3px 6px;
+	font-size: 13px;
+	text-align: center;
+	
+	color: #017e66;
+	background-color: #E7F2ED;
+}
+
+.tag-list li a:hover {
+	background-color: #017e66;
+	color: #fff;
+	text-decoration: none;
+}
+
